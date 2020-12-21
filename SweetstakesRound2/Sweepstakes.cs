@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SweetstakesRound2
 {
+    // Use the Dictionary data structure as an underlying structure.
     class Sweepstakes
     {
         //Variables
@@ -14,12 +15,12 @@ namespace SweetstakesRound2
         public string Name { get; set; }
 
         //Constructor
-
-        //Methods
         public Sweepstakes(string name)
         {
 
         }
+
+        //Methods
 
         public void RegisterContestant(Contestant Contestant)
         {
@@ -27,7 +28,7 @@ namespace SweetstakesRound2
         }
         public Contestant PickWinner()
         {
-            return Contestant;
+            
         }
 
         public void PrintContestantInfo(Contestant contestant)
