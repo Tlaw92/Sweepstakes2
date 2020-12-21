@@ -15,6 +15,10 @@ namespace SweetstakesRound2
         public int RegistrationNumber;
 
         //Constructor
+        public Contestant()
+        {
+
+        }
 
         //Methods
     }

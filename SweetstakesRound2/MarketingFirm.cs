@@ -25,6 +25,8 @@ namespace SweetstakesRound2
 
         public void CreateSweepstake()
         {
+            Contestant contestant = new Contestant();
+            UserInterface.GetUserInputFor(contestant);
 
         }
 

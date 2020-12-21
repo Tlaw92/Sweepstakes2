@@ -10,11 +10,7 @@ namespace SweetstakesRound2
     {
         static void Main(string[] args)
         {
-            //Variables
 
-            //Constructor
-
-            //Methods
         }
     }
 }
