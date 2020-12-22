@@ -42,8 +42,6 @@ namespace SweetstakesRound2
         public Contestant PickWinner()
         {
             int winningNumber = MakeRandomNumber();
-            // a random number is drawn
-            // compare against every contestant reg number
             foreach (KeyValuePair<int, Contestant> winner in contestants)
             {
                 if (winningNumber == winner.Key) 
