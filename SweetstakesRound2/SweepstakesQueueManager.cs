@@ -12,17 +12,21 @@ namespace SweetstakesRound2
         private Queue<Sweepstakes> queue;
 
         //Constructor
+        public SweepstakesQueueManager()
+        {
+            queue = new Queue<Sweepstakes>();
+        }
 
         //Methods
 
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-
+            queue.Enqueue(sweepstakes);
         }
 
         public Sweepstakes GetSweepstakes()
         {
-            return Sweepstakes;
+            return queue.Dequeue();
         }
     }
 }

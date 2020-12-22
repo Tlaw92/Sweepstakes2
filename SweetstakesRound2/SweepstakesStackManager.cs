@@ -12,16 +12,20 @@ namespace SweetstakesRound2
         private Stack<Sweepstakes> stack;
 
         //Constructor
+        public SweepstakesStackManager()
+        {
+            stack = new Stack<Sweepstakes>();
+        }
 
         //Methods
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-
+            stack.Push(sweepstakes);
         }
 
         public Sweepstakes GetSweepstakes()
         {
-            return Sweepstakes;
+            return stack.Pop();
         }
     }
 }
