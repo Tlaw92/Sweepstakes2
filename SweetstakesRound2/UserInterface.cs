@@ -23,20 +23,24 @@ namespace SweetstakesRound2
         public static void GetUserInputFor(Contestant contestantToGetInfoFor)
         {
             Console.WriteLine("Please enter in your information below. \n What is your first name?");
-            contestantToGetInfoFor.Firstname = Console.ReadLine();
+            contestantToGetInfoFor.FirstName = Console.ReadLine();
 
             Console.WriteLine("What is your last name?");
-            string userLastName = Console.ReadLine();
+            contestantToGetInfoFor.LastName = Console.ReadLine();
 
             Console.WriteLine("What is your E-Mail Address?");
-            string userEmail = Console.ReadLine();
-
+            contestantToGetInfoFor.EmailAddress = Console.ReadLine();
         }
 
-        public static void GetRegNumber()
+        public static void GiveUserInformation(int regNumber, string contestantName, string sweepstakesName)
         {
-            Random rnd = new Random();
-            int regNum = rnd.Next(1000, 1999);
+            Console.WriteLine($"Thank you for Registering for {sweepstakesName}, {contestantName}!\n" +
+                $"Your registration number is {regNumber}.");
+        }
+
+        public static void PrintContestantInformaton(Contestant contestant)
+        {
+            Console.WriteLine($"{contestant.FirstName} {contestant.LastName} {contestant.EmailAddress} {contestant.RegistrationNumber}");
         }
 
     }
