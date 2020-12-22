@@ -17,10 +17,10 @@ namespace SweetstakesRound2
         }
 
         //Methods
-
-        public void CreateMarketingFirmWithManager()
+        //FINISH METHOD INJECTION COMMENT BELOW FOR 5 POINTS
+        public void CreateMarketingFirmWithManager(ISweepstakesManager manager) //Method injection Injecting a method that... FINISH THIS!!
         {
-
+            MarketingFirm firm1 = new MarketingFirm(manager);
         }
     }
 }
