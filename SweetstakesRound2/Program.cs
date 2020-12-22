@@ -10,7 +10,7 @@ namespace SweetstakesRound2
     {
         static void Main(string[] args)
         {
-
+            Simulation sim1 = new Simulation();
         }
     }
 }
